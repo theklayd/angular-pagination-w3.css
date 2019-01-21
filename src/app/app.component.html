@@ -1,19 +1,33 @@
 <div class="w3-container">
   <!-- instructions -->
-  <ul>
+  <ul class="w3-center" style="list-style: none;">
     <li>
-      install angular-font-awesome package <a href="https://www.npmjs.com/package/angular-font-awesome" target="_blank" style="color:blue">link here</a> then follow instructions in the link
+      install angular-font-awesome package <a href="https://www.npmjs.com/package/angular-font-awesome" target="_blank" style="color:blue">link here</a> then follow instructions in the link.
     </li>
     <li>
-      add  <code class="w3-codespan">< link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" ></code> to index.html
+      add  <code class="w3-codespan">< link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" ></code> to index.html .
     </li>
     <li>
-        <code class="w3-codespan">import FormsModule from '@angular/forms';</code> in app.module to enable ngModel
+        <code class="w3-codespan">import FormsModule from '@angular/forms';</code> in app.module to enable ngModel.
     </li>
   </ul>
 
-  <label>data size :</label>
-  <input type="number" class="w3-input" [(ngModel)]="dataSize">
+  <div class="w3-row">
+    <div class="w3-third">
+      <label>data size :</label>
+      <input type="number" class="w3-input" [(ngModel)]="dataSize" style="width:300px;">
+    </div>
+    <div class="w3-third">
+      <label>data per page :</label>
+      <input type="number" class="w3-input" [(ngModel)]="dataSize" style="width:300px;">
+    </div>
+    <div class="w3-third">
+      <label>number of pages :</label>
+      <input type="number" class="w3-input" [(ngModel)]="dataSize" style="width:300px;">
+    </div>
+  </div>
+
+
 
   <div class="w3-row w3-center">
 
